@@ -2,7 +2,7 @@
 
 🌐 **简体中文** | [繁體中文](README.zh-TW.md) | [English (upstream)](https://github.com/msitarzewski/agency-agents)
 
-> **215 个即插即用的 AI 专家角色** — 覆盖工程、设计、营销、产品、游戏、安全、金融等 18 个部门。不是通用提示词模板，每个智能体都有独立的人设、专业流程和可交付成果。支持 Claude Code / Cursor / Copilot 等 17 种 AI 编程工具。
+> **216 个即插即用的 AI 专家角色** — 覆盖工程、设计、营销、产品、游戏、安全、金融等 18 个部门。不是通用提示词模板，每个智能体都有独立的人设、专业流程和可交付成果。支持 Claude Code / Cursor / Copilot 等 17 种 AI 编程工具。
 
 [agency-agents](https://github.com/msitarzewski/agency-agents) 的中文社区版。在完整翻译上游的基础上，新增了 50 个中国市场原创智能体（小红书、抖音、微信、B站、飞书、钉钉等平台运营，以及跨境电商、政务ToG、医疗合规、Qt 工业上位机、机械设计、畜禽养殖档案核对等垂直领域）。
 
@@ -15,9 +15,9 @@
 
 | 🤖 AI 智能体 | 🌏 英文版翻译 | 🇨🇳 中国市场原创 | 🧠 支持工具 | 🏢 部门 |
 |:---:|:---:|:---:|:---:|:---:|
-| **215** | **165** | **50** | **17 种** | **18 个** |
+| **216** | **165** | **50** | **17 种** | **18 个** |
 
-> 📖 **配套阅读**：[《AI 编程实战 · 方法论三卷书》](https://book.aibuzhiyu.com/) — 10 个 AI 编程工具完整教程 + 真实踩坑 · 这个仓的 215 个角色装进 Claude Code / Cursor / Codex 后，配合方法论效率更高 · 在线书 + PDF · 永久免费
+> 📖 **配套阅读**：[《AI 编程实战 · 方法论三卷书》](https://book.aibuzhiyu.com/) — 10 个 AI 编程工具完整教程 + 真实踩坑 · 这个仓的 216 个角色装进 Claude Code / Cursor / Codex 后，配合方法论效率更高 · 在线书 + PDF · 永久免费
 
 ---
 
@@ -53,6 +53,8 @@ npm install -g agency-orchestrator
 ao compose "帮我写一篇关于 AI Agent 的深度分析文章" --run
 ```
 
+> **🖥️ 不想用命令行？** 下载 **桌面客户端**（原生 App，免装 Node，双击即用）——在图形界面里浏览本仓库的 216 个角色、组队、一键运行：[**前往下载 →**](https://github.com/jnMetaCode/agency-orchestrator/releases/latest)（macOS / Windows / Linux）。也可先在线体验 [ao.aiolaola.com](https://ao.aiolaola.com)。
+
 ```
 🎭 自动选角 → 叙事学家 + 心理学家 + 内容创作者 + 叙事设计师
 📊 自动编排 → DAG 工作流，检测依赖，并行执行
@@ -64,13 +66,13 @@ ao compose "帮我写一篇关于 AI Agent 的深度分析文章" --run
 | 🎯 **零代码编排** | 纯自然语言或 YAML，一句话描述需求即可 |
 | ⚡ **DAG 并行执行** | 自动检测依赖，无依赖步骤并行跑，速度翻倍 |
 | 🔄 **断点续跑** | 失败步骤可单独重跑，不用从头来 |
-| 🆓 **6 种免费 LLM** | Claude Code / Gemini CLI / Copilot / Codex / OpenClaw / Ollama |
+| 🆓 **7 种免费 LLM** | Claude Code / Gemini CLI / Copilot / Codex / Hermes / OpenClaw / Ollama |
 | 💰 **3 种 API 接入** | DeepSeek / Claude API / OpenAI |
 | 📋 **32 个现成模板** | 开发、营销、数据分析、设计、运营，开箱即用 |
 
 <p align="center">
   <a href="https://github.com/jnMetaCode/agency-orchestrator">
-    <strong>⭐ 查看 Agency Orchestrator — 让 215 个角色为你协作 →</strong>
+    <strong>⭐ 查看 Agency Orchestrator — 让 216 个角色为你协作 →</strong>
   </a>
 </p>
 
@@ -709,7 +711,7 @@ cd /your/project
 
 **⚠️ 关于"装了但几乎不自动触发"**（见 [issue #59](https://github.com/jnMetaCode/agency-agents-zh/issues/59)）：
 
-转换出的 rule 默认 `alwaysApply: false` + 空 `globs:`，属于 "agent-requested rule"——Trae 模型读 description 自行决定是否加载。**全装 215 条 rule 会让 description 互相稀释、几乎命中不到任何一条**，这是设计行为不是 bug。
+转换出的 rule 默认 `alwaysApply: false` + 空 `globs:`，属于 "agent-requested rule"——Trae 模型读 description 自行决定是否加载。**全装 216 条 rule 会让 description 互相稀释、几乎命中不到任何一条**，这是设计行为不是 bug。
 
 **正确姿势**：
 
@@ -943,8 +945,8 @@ DEERFLOW_SKILLS_DIR=/path/to/deerflow/skills/custom ./scripts/install.sh --tool 
 
 | 项目 | 定位 | 一句话 |
 |------|------|-------|
-| **本项目**（agency-agents-zh） ![](https://img.shields.io/github/stars/jnMetaCode/agency-agents-zh?style=flat&label=⭐) | 🎭 专家角色库 | 215 个**即插即用** AI 专家，含 50 中国原创（小红书 / 抖音 / 飞书 / 钉钉 / Qt 上位机 / 机械设计） |
-| [agency-orchestrator](https://github.com/jnMetaCode/agency-orchestrator) | 🚀 编排引擎 | 一句话 → 215 专家协作，**几分钟出方案**（9 家 LLM / 6 免费） |
+| **本项目**（agency-agents-zh） ![](https://img.shields.io/github/stars/jnMetaCode/agency-agents-zh?style=flat&label=⭐) | 🎭 专家角色库 | 216 个**即插即用** AI 专家，含 50 中国原创（小红书 / 抖音 / 飞书 / 钉钉 / Qt 上位机 / 机械设计） |
+| [agency-orchestrator](https://github.com/jnMetaCode/agency-orchestrator) | 🚀 编排引擎 | 一句话 → 216 专家协作，**几分钟出方案**（10 家 LLM / 7 免费） |
 | [superpowers-zh](https://github.com/jnMetaCode/superpowers-zh) ![](https://img.shields.io/github/stars/jnMetaCode/superpowers-zh?style=flat&label=⭐) | 🧠 工作方法论 | 20 个 skills 教 AI 怎么干活（TDD / 调试 / 代码审查等） |
 | [ai-coding-guide](https://github.com/jnMetaCode/ai-coding-guide) | 📖 实战教程 | 66 个 Claude Code 技巧 + 9 款工具最佳实践 + 配置模板 |
 | [shellward](https://github.com/jnMetaCode/shellward) | 🛡️ 安全中间件 | 8 层防御 + DLP 数据流 + 注入检测，**零依赖**（含 MCP Server） |
@@ -968,7 +970,7 @@ MIT License — 自由使用，商业或个人均可。
 
 <div align="center">
 
-**215 个 AI 专家角色，17 种工具支持，即装即用**
+**216 个 AI 专家角色，17 种工具支持，即装即用**
 
 [⭐ Star 本项目](https://github.com/jnMetaCode/agency-agents-zh) · [提交 Issue](https://github.com/jnMetaCode/agency-agents-zh/issues) · [贡献代码](https://github.com/jnMetaCode/agency-agents-zh/pulls)
 
